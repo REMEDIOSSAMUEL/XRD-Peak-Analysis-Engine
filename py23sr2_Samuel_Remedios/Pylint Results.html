@@ -1,0 +1,1038 @@
+
+        <html>
+        <head>
+            <title>Report on Samuel Remedios (py23sr2)</title>
+            <style>
+            .red {color: red; }
+            .orange {color: orange; }
+            .green {color: green; }
+            body {width: 1280px;}
+            @media print {
+                body {
+                    font-size: 11pt !important;
+                    width: 28cm !important;
+                    }
+                h1 {
+                    font-size: 14pt;
+                    }
+                h2 {
+                    font-size: 13pt;
+                    }
+                h3 {
+                    fon t-size: 12pt;
+                    }
+                table {max-width: 28cm; }
+                img.figure {max-width: 7cm;}
+            }
+            @page {
+              size: A4 landscape; /* Change from the default size of A4 */
+              margin: 2cm; /* Set margin on each page */
+            }
+            </style>
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+            
+            <script
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+            <script>
+            $(document).ready(function () {
+                $('#dialog').dialog({
+                    autoOpen: false,
+                    closeOnEscape: true,
+                    width: 800,
+                    height: 600,
+                });
+                $('.figure').click(function () {
+                    $("#dialog").html('<img style="max-height: 600px; max-width: 800px;" src="'+$(this).attr('src')+'">');
+                    $("#dialog").dialog("open");
+                    });
+
+                });
+             </script>
+        </head>
+        <body>
+            <div id='dialog'>&nbsp;</div>
+            <h1>Report on Samuel Remedios (py23sr2)</h2>
+
+            <table><tr>
+            <td>Data File</td><td>/mnt/d/Teaching/Student Work/py23sr2_Samuel_Remedios/assessment_data_py23sr2 (1).dat</td>
+            </tr>
+
+            <tr>
+            <td>Code File</td><td>/mnt/d/Teaching/Student Work/py23sr2_Samuel_Remedios/py23sr2.py</td>
+            </tr>
+<tr><td colspabn=2><h2>User Supplied Data Settings</h2></td></tr>
+<tr><td>mode</td><td>assessment</td></tr>
+<tr><td>variable_meta</td><td>True</td></tr>
+<tr><td>noisy</td><td>True</td></tr>
+<tr><td>background</td><td>True</td></tr>
+<tr><td>multiple</td><td>True</td></tr>
+<tr><td>wavelength (angstroms)</td><td>1.32835</td></tr>
+<tr><td>features</td><td>15</td></tr>
+<tr><td>offset_compensation</td><td>1</td></tr>
+<tr><td>pre-filter-mode</td><td>0</td></tr>
+<tr><td>slit_1_setting</td><td>0.6621</td></tr>
+<tr><td>detector_offset</td><td>-4.2023</td></tr>
+<tr><td>preamp_freq</td><td>923.979</td></tr>
+<tr><td>seed</td><td>928423300</td></tr>
+<tr><td>integrator constant</td><td>41.206</td></tr>
+<tr><td>post-filter-chopper</td><td>0</td></tr>
+<tr><td>temperature</td><td>347.9667</td></tr>
+<tr><td>detector_gain</td><td>1000</td></tr>
+<tr><td>issid</td><td>py23sr2</td></tr>
+<tr><td>slit_2_setting</td><td>0.7634</td></tr>
+</table>
+<h3>Base mark for features</h3>
+              <p>The features score will be graded by starting from this base mark, and subtracting scores based on
+              how the code performed in the tests below. Issues considered will include whether answers matched,
+              whether the code ran equally well with the reference data, whether the expected plots were produced
+              and looked reasonable and whether the code produced any spurious output.</p>
+<p>Base mark based on features: <strong>all options on - outstanding</strong></p>
+<h2>Importing the Student Module</h2>
+<h2>Importing Student module.....</h2>
+</ul>
+<p>Finsihed checking Student code for potential issues.</p>
+Got module name 'py23sr2'
+
+<h2>Finished Module import</h2>
+
+</tr></table>
+<h2>Comparison of Results.....</h2>
+<p>Student solution took 491.5% the model solution's time.</p>
+<table><tr><th>Parameter</th><th>Student Answer</th><th>Model Answer</th><th>Actual Answer</th><th>Comment</th></tr>
+<tr><td colpan =5>Answer is a list for Peaks</td></tr>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[0]</td></tr>
+<tr><td>2theta</td><td>36.70&plusmn;0.05</td><td>36.664&plusmn;0.002</td><td>36.66472&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>211.0&plusmn;0.6m</td><td>211.167&plusmn;0.009m</td><td>211.2&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>565&plusmn;4m</td><td>566.458301942501m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>293&plusmn;3</td><td>296&plusmn;2</td><td>296.6&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[1]</td></tr>
+<tr><td>2theta</td><td>42.60&plusmn;0.05</td><td>42.593&plusmn;0.003</td><td>42.59203&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>182.8&plusmn;0.4m</td><td>182.87&plusmn;0.01m</td><td>182.9&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>578&plusmn;6m</td><td>577.1169657373364m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>194&plusmn;3</td><td>197&plusmn;2</td><td>198.0&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[2]</td></tr>
+<tr><td>2theta</td><td>61.80&plusmn;0.05</td><td>61.810&plusmn;0.003</td><td>61.81094&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>129.3&plusmn;0.2m</td><td>129.313&plusmn;0.006m</td><td>129.3&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>623&plusmn;8m</td><td>626.6893267878846m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>169&plusmn;3</td><td>171&plusmn;2</td><td>171.0&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[3]</td></tr>
+<tr><td>2theta</td><td>74.10&plusmn;0.05</td><td>74.066&plusmn;0.002</td><td>74.06623&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>110.2&plusmn;0.1m</td><td>110.277&plusmn;0.002m</td><td>110.3&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>700&plusmn;100m</td><td>673&plusmn;4m</td><td>673.5786004748346m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>382&plusmn;3</td><td>387&plusmn;2</td><td>387.2&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[4]</td></tr>
+<tr><td>2theta</td><td>78.00&plusmn;0.05</td><td>77.964&plusmn;0.006</td><td>77.96122&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>105.5&plusmn;0.1m</td><td>105.580&plusmn;0.006m</td><td>105.6&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>700&plusmn;100m</td><td>700&plusmn;10m</td><td>691.7131643728427m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>119&plusmn;3</td><td>121&plusmn;2</td><td>119.0&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[5]</td></tr>
+<tr><td>2theta</td><td>93.20&plusmn;0.05</td><td>93.17&plusmn;0.01</td><td>93.16634&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>91.41&plusmn;0.08m</td><td>91.437&plusmn;0.008m</td><td>91.4&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>800&plusmn;100m</td><td>760&plusmn;30m</td><td>782.3493362728672m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>67&plusmn;3</td><td>70&plusmn;2</td><td>70.5&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Composition</td><td>89&plusmn;5m</td><td>91.88&plusmn;0.04m</td><td>92&plusmn;1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Grain size</td><td>13.8&plusmn;0.9</td><td>14.2&plusmn;0.2</td><td>14.15&plusmn;0.01</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+</table>
+<h2>Trying Code with Stadard Data Set</h2>
+<h4>Running Student code</h4>
+
+</tr></table>
+<h2>Comparison of Results for Standard Data.....</h2>
+<p>Student solution took 491.5% the model solution's time.</p>
+<table><tr><th>Parameter</th><th>Student Answer</th><th>Model Answer</th><th>Actual Answer</th><th>Comment</th></tr>
+<tr><td colpan =5>Answer is a list for Peaks</td></tr>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[0]</td></tr>
+<tr><td>2theta</td><td>32.70&plusmn;0.05</td><td>32.675&plusmn;0.001</td><td>32.67486&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>212.0&plusmn;0.6m</td><td>212.129&plusmn;0.009m</td><td>212.1&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>546&plusmn;3m</td><td>545.2737398116981m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>322&plusmn;1</td><td>325&plusmn;2</td><td>326.0&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[1]</td></tr>
+<tr><td>2theta</td><td>37.90&plusmn;0.05</td><td>37.908&plusmn;0.002</td><td>37.90813&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>183.7&plusmn;0.5m</td><td>183.71&plusmn;0.01m</td><td>183.7&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>551&plusmn;5m</td><td>553.2543684542879m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>220&plusmn;1</td><td>222&plusmn;2</td><td>222.2&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[2]</td></tr>
+<tr><td>2theta</td><td>54.70&plusmn;0.05</td><td>54.688&plusmn;0.003</td><td>54.69043&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>129.9&plusmn;0.2m</td><td>129.910&plusmn;0.006m</td><td>129.9&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>584&plusmn;6m</td><td>589.0836780880103m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>202&plusmn;1</td><td>204&plusmn;2</td><td>206.7&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[3]</td></tr>
+<tr><td>2theta</td><td>65.20&plusmn;0.05</td><td>65.181&plusmn;0.001</td><td>65.18172&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>110.8&plusmn;0.2m</td><td>110.783&plusmn;0.002m</td><td>110.8&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>621&plusmn;3m</td><td>621.0477490364833m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>481&plusmn;1</td><td>484&plusmn;2</td><td>484.4&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[4]</td></tr>
+<tr><td>2theta</td><td>68.50&plusmn;0.05</td><td>68.468&plusmn;0.004</td><td>68.46984&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>106.0&plusmn;0.1m</td><td>106.068&plusmn;0.005m</td><td>106.1&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>600&plusmn;100m</td><td>636&plusmn;9m</td><td>632.9171201380042m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>151&plusmn;1</td><td>151&plusmn;2</td><td>149.6&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td colpan=5>Comapring sub-dictionary for Peaks[5]</td></tr>
+<tr><td>2theta</td><td>81.00&plusmn;0.05</td><td>81.020&plusmn;0.008</td><td>81.02591&plusmn;0.00001</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>d</td><td>91.88&plusmn;0.09m</td><td>91.862&plusmn;0.007m</td><td>91.9&plusmn;0.1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>FWHM</td><td>700&plusmn;100m</td><td>690&plusmn;20m</td><td>688.2607733385047m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Area</td><td>85&plusmn;1</td><td>86&plusmn;2</td><td>86.1&plusmn;0.1</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Composition</td><td>127&plusmn;6m</td><td>128.24&plusmn;0.09m</td><td>128&plusmn;1m</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+<tr><td>Grain size</td><td>12.9&plusmn;0.9</td><td>13.1&plusmn;0.2</td><td>13.07&plusmn;0.01</td><td style='background-color:LimeGreen;'>Student and model agree and are correct within 5.0 std errors</td>
+</table>
+<h2>Student Code Structure</h2>
+<table><tr>
+<th>Method Name</th><th>Docstring Length</th><th>Code Checksum</th>
+</tr>
+<tr><td>analyze_peaks</td><td>245</td><td>483778168</td></tr>
+<tr><td>background_model</td><td>165</td><td>3980204096</td></tr>
+<tr><td>create_peak_mask</td><td>165</td><td>3511622675</td></tr>
+<tr><td>detect_peaks</td><td>203</td><td>1128283089</td></tr>
+<tr><td>fit_background</td><td>152</td><td>202147284</td></tr>
+<tr><td>gaussian</td><td>122</td><td>3783596814</td></tr>
+<tr><td>load_xrd_data</td><td>148</td><td>3714905927</td></tr>
+<tr><td>plot_results</td><td>579</td><td>875473982</td></tr>
+</table>
+<p>Saved 8 Function signatures</p>
+<h1>Student Code</h1>
+<H2>Code quality Analysis py23sr2.py</H2>
+<p>These are the results from running an autmartic code analysis tool over your code. Just because this
+              thinks something is a problem, does not mean you have been marked down for it. This information is provided
+              to help the (human) graders evaluate your code.</p>
+<h3>Code Liniting statistics</h3>
+<ul>
+<li>Pylint code quality score: 78.8%</li>
+<li>Number of warning detected: 8</li>
+<li>Number of errors detected: 0</li>
+<li>Number of fatal errors detected: 0</li>
+<li>Number of functions: 9</li>
+<li>... of which undocumented: 0.0%</li>
+<li>Percentage of duplicated lines: 0.0</li>
+<li>Running mccabe analysis tool:
+<ol></ol><br/>Overall score 0</li>
+</ul>
+<h3>Complexity Analysis</h3>
+py23sr2.py<br/>
+    F 237:0 ProcessData - C<br/>
+    F 135:0 analyze_peaks - B<br/>
+    F 8:0 load_xrd_data - B<br/>
+    F 179:0 plot_results - A<br/>
+    F 71:0 create_peak_mask - A<br/>
+    F 38:0 detect_peaks - A<br/>
+    F 55:0 background_model - A<br/>
+    F 97:0 fit_background - A<br/>
+    F 118:0 gaussian - A<br/>
+<br/>
+9 blocks (classes, functions, methods) analyzed.<br/>
+Average complexity: A (3.7777777777777777)<br/>
+
+<h3>Maintainability index</h3>
+py23sr2.py - A<br/>
+
+<div class="highlight" style="background: #ffffff"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  1</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  2</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  3</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  4</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  5</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  6</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  7</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  8</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">  9</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 10</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 11</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 12</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 13</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 14</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 15</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 16</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 17</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 18</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 19</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 20</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 21</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 22</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 23</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 24</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 25</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 26</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 27</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 28</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 29</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 30</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 31</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 32</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 33</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 34</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 35</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 36</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 37</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 38</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 39</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 40</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 41</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 42</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 43</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 44</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 45</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 46</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 47</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 48</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 49</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 50</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 51</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 52</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 53</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 54</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 55</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 56</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 57</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 58</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 59</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 60</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 61</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 62</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 63</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 64</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 65</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 66</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 67</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 68</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 69</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 70</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 71</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 72</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 73</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 74</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 75</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 76</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 77</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 78</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 79</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 80</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 81</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 82</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 83</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 84</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 85</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 86</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 87</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 88</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 89</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 90</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 91</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 92</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 93</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 94</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 95</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 96</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 97</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 98</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;"> 99</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">100</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">101</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">102</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">103</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">104</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">105</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">106</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">107</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">108</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">109</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">110</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">111</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">112</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">113</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">114</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">115</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">116</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">117</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">118</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">119</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">120</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">121</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">122</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">123</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">124</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">125</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">126</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">127</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">128</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">129</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">130</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">131</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">132</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">133</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">134</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">135</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">136</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">137</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">138</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">139</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">140</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">141</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">142</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">143</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">144</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">145</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">146</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">147</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">148</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">149</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">150</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">151</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">152</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">153</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">154</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">155</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">156</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">157</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">158</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">159</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">160</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">161</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">162</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">163</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">164</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">165</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">166</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">167</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">168</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">169</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">170</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">171</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">172</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">173</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">174</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">175</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">176</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">177</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">178</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">179</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">180</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">181</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">182</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">183</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">184</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">185</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">186</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">187</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">188</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">189</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">190</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">191</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">192</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">193</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">194</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">195</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">196</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">197</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">198</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">199</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">200</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">201</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">202</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">203</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">204</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">205</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">206</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">207</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">208</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">209</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">210</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">211</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">212</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">213</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">214</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">215</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">216</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">217</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">218</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">219</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">220</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">221</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">222</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">223</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">224</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">225</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">226</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">227</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">228</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">229</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">230</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">231</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">232</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">233</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">234</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">235</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">236</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">237</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">238</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">239</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">240</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">241</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">242</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">243</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">244</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">245</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">246</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">247</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">248</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">249</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">250</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">251</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">252</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">253</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">254</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">255</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">256</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">257</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">258</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">259</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">260</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">261</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">262</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">263</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">264</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">265</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">266</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">267</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">268</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">269</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">270</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">271</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">272</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">273</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">274</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">275</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">276</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">277</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">278</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">279</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">280</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">281</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">282</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">283</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">284</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">285</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">286</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">287</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">288</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">289</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">290</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">291</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">292</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">293</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">294</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">295</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">296</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">297</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">298</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">299</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">300</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">301</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">302</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">303</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">304</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">305</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">306</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">307</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">308</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">309</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">310</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">311</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">312</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">313</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">314</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">315</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">316</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">317</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">318</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">319</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">320</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">321</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">322</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">323</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">324</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">325</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">326</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">327</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">328</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">329</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">330</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">331</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">332</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">333</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">334</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">335</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">336</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">337</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">338</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">339</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">340</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">341</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">342</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">343</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">344</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">345</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">346</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">347</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">348</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">349</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">350</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">351</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">352</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">353</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">354</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">355</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">356</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">357</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">358</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">359</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">360</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">361</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">362</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">363</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">364</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">365</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">366</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">367</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">368</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">369</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">370</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">371</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">372</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">373</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">374</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">375</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">376</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">377</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">378</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">379</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">380</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">381</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">382</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">383</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">384</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">385</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">386</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">387</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">388</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">389</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">390</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">391</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">392</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">393</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">394</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">395</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">396</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">397</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">398</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">399</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">400</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">401</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">402</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">403</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">404</span>
+<span style="color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px;">405</span></pre></div></td><td class="code"><div><pre style="line-height: 125%;"><span></span><span style="color: #177500"># Importing all the necessary modules</span>
+<span style="color: #A90D91">import</span> <span style="color: #000000">numpy</span> <span style="color: #A90D91">as</span> <span style="color: #000000">np</span>
+<span style="color: #A90D91">import</span> <span style="color: #000000">matplotlib.pyplot</span> <span style="color: #A90D91">as</span> <span style="color: #000000">plt</span>
+<span style="color: #A90D91">from</span> <span style="color: #000000">scipy.optimize</span> <span style="color: #A90D91">import</span> <span style="color: #000000">curve_fit</span>
+<span style="color: #A90D91">from</span> <span style="color: #000000">scipy.signal</span> <span style="color: #A90D91">import</span> <span style="color: #000000">find_peaks</span>, <span style="color: #000000">peak_widths</span>
+
+<span style="color: #177500"># Function to load the diffraction data from file and extract experimental parameters required</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">load_xrd_data</span>(<span style="color: #000000">file_path</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot; Load XRD data from file and extract experimental parameters.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    file_path: Path to the XRD data file.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Wavelength, angles, and counts. &quot;&quot;&quot;</span>
+    
+    <span style="color: #177500">#Opens the file and reads all lines one by one</span>
+    <span style="color: #A90D91">with</span> <span style="color: #A90D91">open</span>(<span style="color: #000000">file_path</span>, <span style="color: #C41A16">&quot;r&quot;</span>) <span style="color: #A90D91">as</span> <span style="color: #000000">file</span>:
+        <span style="color: #000000">lines</span> <span style="color: #000000">=</span> <span style="color: #000000">file.readlines</span>()
+        <span style="color: #000000">wavelength</span> <span style="color: #000000">=</span> <span style="color: #A90D91">None</span>
+        <span style="color: #177500"># Finds the wavelength in the metadata</span>
+        <span style="color: #A90D91">for</span> <span style="color: #000000">line</span> <span style="color: #000000">in</span> <span style="color: #000000">lines</span>:
+            <span style="color: #A90D91">if</span> <span style="color: #000000">line.startswith</span>(<span style="color: #C41A16">&quot;Wavelength&quot;</span>):
+                <span style="color: #177500"># Converts the wavelength to meters from angstoms</span>
+                <span style="color: #000000">wavelength</span> <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">line.split</span>(<span style="color: #C41A16">&quot;=&quot;</span>)[<span style="color: #1C01CE">1</span>]<span style="color: #000000">.strip</span>()) <span style="color: #000000">*</span> <span style="color: #1C01CE">1e-10</span>
+                <span style="color: #A90D91">break</span>
+        <span style="color: #177500"># Raises an error if the wavelength cannot be found</span>
+        <span style="color: #A90D91">if</span> <span style="color: #000000">wavelength</span> <span style="color: #000000">is</span> <span style="color: #A90D91">None</span>:
+            <span style="color: #A90D91">raise</span> <span style="color: #000000">ValueError</span>(<span style="color: #C41A16">&quot;Wavelength not found in file header&quot;</span>)
+
+    <span style="color: #177500">#Skips the header lines and loads the actual data</span>
+    <span style="color: #000000">skip_lines</span> <span style="color: #000000">=</span> <span style="color: #000000">lines.index</span>(<span style="color: #A90D91">next</span>(<span style="color: #000000">line</span> <span style="color: #A90D91">for</span> <span style="color: #000000">line</span> <span style="color: #000000">in</span> <span style="color: #000000">lines</span> <span style="color: #A90D91">if</span> <span style="color: #C41A16">&quot;&amp;END&quot;</span> <span style="color: #000000">in</span> <span style="color: #000000">line</span>)) <span style="color: #000000">+</span> <span style="color: #1C01CE">2</span>
+    <span style="color: #177500">#Extracts the angles and counts from the file</span>
+    <span style="color: #000000">angles</span>, <span style="color: #000000">counts</span> <span style="color: #000000">=</span> <span style="color: #000000">np.genfromtxt</span>(<span style="color: #000000">file_path</span>, <span style="color: #000000">skip_header=skip_lines</span>, <span style="color: #000000">unpack=</span><span style="color: #A90D91">True</span>)
+    <span style="color: #A90D91">return</span> <span style="color: #000000">wavelength</span>, <span style="color: #000000">angles</span>, <span style="color: #000000">counts</span>
+
+<span style="color: #177500"># A Function to detect the diffraction peaks from the data</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">detect_peaks</span>(<span style="color: #000000">counts</span>, <span style="color: #000000">height=</span><span style="color: #1C01CE">150</span>, <span style="color: #000000">prominence=</span><span style="color: #1C01CE">20</span>, <span style="color: #000000">width=</span><span style="color: #1C01CE">3</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot; Initial peak detection using conservative thresholds.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    counts: Counts data.</span>
+<span style="color: #C41A16">    height: Height threshold.</span>
+<span style="color: #C41A16">    prominence: Prominence threshold.</span>
+<span style="color: #C41A16">    width: Width threshold.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Indices of detected peaks. &quot;&quot;&quot;</span>
+
+    <span style="color: #177500">#Uses the find_peaks function from scipy to detect peaks</span>
+    <span style="color: #000000">peaks</span>, <span style="color: #000000">_</span> <span style="color: #000000">=</span> <span style="color: #000000">find_peaks</span>(<span style="color: #000000">counts</span>, <span style="color: #000000">height=height</span>, <span style="color: #000000">prominence=prominence</span>, <span style="color: #000000">width=width</span>)
+    <span style="color: #A90D91">return</span> <span style="color: #000000">peaks</span>
+
+<span style="color: #177500"># Function which models the theta dependent background radiation</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">background_model</span>(<span style="color: #000000">two_theta</span>, <span style="color: #000000">base</span>, <span style="color: #000000">center</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot;Quadratic model for X-ray background radiation.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    two_theta: Angles data.</span>
+<span style="color: #C41A16">    base: Base parameter.</span>
+<span style="color: #C41A16">    center: Center parameter.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Background radiation values.</span>
+<span style="color: #C41A16">    &quot;&quot;&quot;</span>
+    <span style="color: #177500"># Calculates the background radiation using the quadratic model</span>
+    <span style="color: #A90D91">return</span> <span style="color: #000000">base</span> <span style="color: #000000">-</span> ((<span style="color: #000000">two_theta</span> <span style="color: #000000">-</span> <span style="color: #000000">center</span>)<span style="color: #000000">**</span><span style="color: #1C01CE">2</span>)<span style="color: #000000">/</span><span style="color: #1C01CE">100</span>
+
+<span style="color: #177500">#This function creates a mask excluding areas around detected peaks</span>
+<span style="color: #177500"># I used this &quot;https://stackoverflow.com/questions/72310246/numpy-fastest-way-to-create-mask-array-around-indexes&quot; for assistance but did not copy any code directly, was more used so i could understand the logic</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">create_peak_mask</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">peak_indices</span>, <span style="color: #000000">window=</span><span style="color: #1C01CE">3.0</span>):
+
+    <span style="color: #C41A16">&quot;&quot;&quot;   Create mask excluding regions around detected peaks.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    angles: Angles data.</span>
+<span style="color: #C41A16">    peak_indices: Indices of detected peaks.</span>
+<span style="color: #C41A16">    window: Window size.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Mask values.</span>
+<span style="color: #C41A16">    &quot;&quot;&quot;</span>
+    <span style="color: #177500">#Calculates the angle step</span>
+    <span style="color: #000000">angle_step</span> <span style="color: #000000">=</span> <span style="color: #000000">angles</span>[<span style="color: #1C01CE">1</span>] <span style="color: #000000">-</span> <span style="color: #000000">angles</span>[<span style="color: #1C01CE">0</span>]
+    <span style="color: #177500">#Intially creates the mask with all &quot;True&quot; values</span>
+    <span style="color: #000000">mask</span> <span style="color: #000000">=</span> <span style="color: #000000">np.ones_like</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">dtype=</span><span style="color: #A90D91">bool</span>)
+    <span style="color: #177500"># Calculates the number of points to exclude around each peak</span>
+    <span style="color: #000000">exclude_points</span> <span style="color: #000000">=</span> <span style="color: #A90D91">int</span>(<span style="color: #000000">window/</span>(<span style="color: #1C01CE">2</span><span style="color: #000000">*angle_step</span>))
+    <span style="color: #177500">#Sets the mask to &quot;False&quot; for the excluded points</span>
+    <span style="color: #A90D91">for</span> <span style="color: #000000">idx</span> <span style="color: #000000">in</span> <span style="color: #000000">peak_indices</span>:
+        <span style="color: #000000">start</span> <span style="color: #000000">=</span> <span style="color: #A90D91">max</span>(<span style="color: #1C01CE">0</span>, <span style="color: #000000">idx</span> <span style="color: #000000">-</span> <span style="color: #000000">exclude_points</span>)
+        <span style="color: #000000">end</span> <span style="color: #000000">=</span> <span style="color: #A90D91">min</span>(<span style="color: #A90D91">len</span>(<span style="color: #000000">angles</span>), <span style="color: #000000">idx</span> <span style="color: #000000">+</span> <span style="color: #000000">exclude_points</span>)
+        <span style="color: #000000">mask</span>[<span style="color: #000000">start</span>:<span style="color: #000000">end</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">False</span>
+    <span style="color: #A90D91">return</span> <span style="color: #000000">mask</span>
+
+<span style="color: #177500">#This function fits the background model to non-peak regions</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">fit_background</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">counts</span>, <span style="color: #000000">mask</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot;</span>
+<span style="color: #C41A16">    Fit background model to non-peak regions.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    angles: Angles data.</span>
+<span style="color: #C41A16">    counts: Counts data.</span>
+<span style="color: #C41A16">    mask: Mask values.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Background parameters and curve.&quot;&quot;&quot;</span>
+    
+    <span style="color: #177500"># Prepares the parameters for the background model</span>
+    <span style="color: #000000">p0</span> <span style="color: #000000">=</span> [<span style="color: #000000">np.median</span>(<span style="color: #000000">counts</span>[<span style="color: #000000">mask</span>]), <span style="color: #000000">np.median</span>(<span style="color: #000000">angles</span>[<span style="color: #000000">mask</span>])]
+    <span style="color: #177500"># Fits the background model using curve_fit</span>
+    <span style="color: #000000">popt</span>, <span style="color: #000000">pcov</span> <span style="color: #000000">=</span> <span style="color: #000000">curve_fit</span>(<span style="color: #000000">background_model</span>, <span style="color: #000000">angles</span>[<span style="color: #000000">mask</span>], <span style="color: #000000">counts</span>[<span style="color: #000000">mask</span>], <span style="color: #000000">p0=p0</span>)
+    <span style="color: #177500"># Calculates the background curve</span>
+    <span style="color: #000000">bg_curve</span> <span style="color: #000000">=</span> <span style="color: #000000">background_model</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">*popt</span>)
+    <span style="color: #A90D91">return</span> <span style="color: #000000">popt</span>, <span style="color: #000000">pcov</span>, <span style="color: #000000">bg_curve</span>
+
+<span style="color: #177500"># A Function to calculate the Gaussian function</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">gaussian</span>(<span style="color: #000000">x</span>, <span style="color: #000000">a</span>, <span style="color: #000000">x0</span>, <span style="color: #000000">sigma</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot;</span>
+<span style="color: #C41A16">    Gaussian function.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    x: Input values.</span>
+<span style="color: #C41A16">    a: Amplitude.</span>
+<span style="color: #C41A16">    x0: Center.</span>
+<span style="color: #C41A16">    sigma: Standard deviation.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Gaussian values.</span>
+<span style="color: #C41A16">    &quot;&quot;&quot;</span>
+    <span style="color: #177500"># Calculates the Gaussian function</span>
+    <span style="color: #A90D91">return</span> <span style="color: #000000">a</span> <span style="color: #000000">*</span> <span style="color: #000000">np.exp</span>(<span style="color: #000000">-</span>(<span style="color: #000000">x</span> <span style="color: #000000">-</span> <span style="color: #000000">x0</span>)<span style="color: #000000">**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">/</span> (<span style="color: #1C01CE">2</span> <span style="color: #000000">*</span> <span style="color: #000000">sigma**</span><span style="color: #1C01CE">2</span>))
+
+<span style="color: #177500"># A Function to perform  peak analysis on the cleaned data</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">analyze_peaks</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">net_counts</span>, <span style="color: #000000">height=</span><span style="color: #1C01CE">20</span>, <span style="color: #000000">prominence=</span><span style="color: #1C01CE">10</span>, <span style="color: #000000">width=</span><span style="color: #1C01CE">2</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot;</span>
+<span style="color: #C41A16">    Perform detailed peak analysis on background-subtracted data.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    angles: Angles data.</span>
+<span style="color: #C41A16">    net_counts: Net counts data.</span>
+<span style="color: #C41A16">    height: Height threshold.</span>
+<span style="color: #C41A16">    prominence: Prominence threshold.</span>
+<span style="color: #C41A16">    width: Width threshold.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Peaks, FWHMs, areas, and widths.</span>
+<span style="color: #C41A16">    &quot;&quot;&quot;</span>
+    <span style="color: #177500">#Detects peaks in the cleaned data</span>
+    <span style="color: #000000">peaks</span>, <span style="color: #000000">_</span> <span style="color: #000000">=</span> <span style="color: #000000">find_peaks</span>(<span style="color: #000000">net_counts</span>, <span style="color: #000000">height=height</span>, <span style="color: #000000">prominence=prominence</span>, <span style="color: #000000">width=width</span>)
+    <span style="color: #177500"># creates lists to store the results</span>
+    <span style="color: #000000">fwhms</span> <span style="color: #000000">=</span> []
+    <span style="color: #000000">areas</span> <span style="color: #000000">=</span> []
+    <span style="color: #000000">widths</span> <span style="color: #000000">=</span> []
+    <span style="color: #177500"># Calculates the angle step</span>
+    <span style="color: #000000">angle_step</span> <span style="color: #000000">=</span> <span style="color: #000000">angles</span>[<span style="color: #1C01CE">1</span>] <span style="color: #000000">-</span> <span style="color: #000000">angles</span>[<span style="color: #1C01CE">0</span>]
+    <span style="color: #177500"># Checks if any peaks were detected</span>
+    <span style="color: #A90D91">if</span> <span style="color: #A90D91">len</span>(<span style="color: #000000">peaks</span>) <span style="color: #000000">&gt;</span> <span style="color: #1C01CE">0</span>:
+        <span style="color: #177500"># Calculates the width of each peak</span>
+        <span style="color: #000000">width_data</span> <span style="color: #000000">=</span> <span style="color: #000000">peak_widths</span>(<span style="color: #000000">net_counts</span>, <span style="color: #000000">peaks</span>, <span style="color: #000000">rel_height=</span><span style="color: #1C01CE">0.5</span>)
+        <span style="color: #000000">fwhms</span> <span style="color: #000000">=</span> <span style="color: #000000">width_data</span>[<span style="color: #1C01CE">0</span>] <span style="color: #000000">*</span> <span style="color: #000000">angle_step</span>
+        <span style="color: #177500"># Calculates the area of each peak</span>
+        <span style="color: #A90D91">for</span> <span style="color: #000000">peak_idx</span> <span style="color: #000000">in</span> <span style="color: #000000">peaks</span>:
+            <span style="color: #000000">height</span> <span style="color: #000000">=</span> <span style="color: #000000">net_counts</span>[<span style="color: #000000">peak_idx</span>]
+            <span style="color: #000000">threshold</span> <span style="color: #000000">=</span> <span style="color: #1C01CE">0.05</span> <span style="color: #000000">*</span> <span style="color: #000000">height</span>
+            <span style="color: #000000">left</span> <span style="color: #000000">=</span> <span style="color: #000000">peak_idx</span>
+            <span style="color: #A90D91">while</span> <span style="color: #000000">left</span> <span style="color: #000000">&gt;</span> <span style="color: #1C01CE">0</span> <span style="color: #000000">and</span> <span style="color: #000000">net_counts</span>[<span style="color: #000000">left</span>] <span style="color: #000000">&gt;</span> <span style="color: #000000">threshold</span>:
+                <span style="color: #000000">left</span> <span style="color: #000000">-=</span> <span style="color: #1C01CE">1</span>
+            <span style="color: #000000">right</span> <span style="color: #000000">=</span> <span style="color: #000000">peak_idx</span>
+            <span style="color: #A90D91">while</span> <span style="color: #000000">right</span> <span style="color: #000000">&lt;</span> <span style="color: #A90D91">len</span>(<span style="color: #000000">net_counts</span>)<span style="color: #000000">-</span><span style="color: #1C01CE">1</span> <span style="color: #000000">and</span> <span style="color: #000000">net_counts</span>[<span style="color: #000000">right</span>] <span style="color: #000000">&gt;</span> <span style="color: #000000">threshold</span>:
+                <span style="color: #000000">right</span> <span style="color: #000000">+=</span> <span style="color: #1C01CE">1</span>
+            <span style="color: #000000">n_points</span> <span style="color: #000000">=</span> <span style="color: #000000">right</span> <span style="color: #000000">-</span> <span style="color: #000000">left</span> <span style="color: #000000">+</span> <span style="color: #1C01CE">1</span>
+            <span style="color: #000000">area</span> <span style="color: #000000">=</span> <span style="color: #000000">np.sum</span>(<span style="color: #000000">net_counts</span>[<span style="color: #000000">left</span>:<span style="color: #000000">right</span>]) <span style="color: #000000">*</span> <span style="color: #000000">angle_step</span>
+            <span style="color: #000000">widths.append</span>(<span style="color: #000000">n_points</span>)
+            <span style="color: #000000">areas.append</span>(<span style="color: #000000">area</span>)
+    <span style="color: #A90D91">return</span> <span style="color: #000000">peaks</span>, <span style="color: #000000">fwhms</span>, <span style="color: #000000">areas</span>, <span style="color: #000000">widths</span>
+
+<span style="color: #177500"># This function generates an annotated plot of the analysis results</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">plot_results</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">raw</span>, <span style="color: #000000">bg</span>, <span style="color: #000000">net</span>, <span style="color: #000000">peak_x</span>, <span style="color: #000000">peak_y</span>, <span style="color: #000000">labels</span>, <span style="color: #000000">fwhms</span>, <span style="color: #000000">areas</span>, <span style="color: #000000">widths</span>, <span style="color: #000000">fwhm_errors</span>, <span style="color: #000000">area_errors</span>, <span style="color: #000000">gaussian_curves</span>, <span style="color: #000000">composition</span>, <span style="color: #000000">composition_error</span>, <span style="color: #000000">grain_size</span>, <span style="color: #000000">grain_size_error</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot;</span>
+<span style="color: #C41A16">    Generate annotated plot of XRD analysis results.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    angles: Angles data.</span>
+<span style="color: #C41A16">    raw: Raw counts data.</span>
+<span style="color: #C41A16">    bg: Background radiation values.</span>
+<span style="color: #C41A16">    net: Net counts data.</span>
+<span style="color: #C41A16">    peak_x: Peak x-coordinates.</span>
+<span style="color: #C41A16">    peak_y: Peak y-coordinates.</span>
+<span style="color: #C41A16">    labels: Peak labels.</span>
+<span style="color: #C41A16">    fwhms: FWHMs of peaks.</span>
+<span style="color: #C41A16">    areas: Areas of peaks.</span>
+<span style="color: #C41A16">    widths: Widths of peaks.</span>
+<span style="color: #C41A16">    fwhm_errors: Errors in FWHMs.</span>
+<span style="color: #C41A16">    area_errors: Errors in areas.</span>
+<span style="color: #C41A16">    gaussian_curves: Gaussian curves for each peak.</span>
+<span style="color: #C41A16">    composition: Composition of the material.</span>
+<span style="color: #C41A16">    composition_error: Error in the composition.</span>
+<span style="color: #C41A16">    grain_size: Grain size of the material.</span>
+<span style="color: #C41A16">    grain_size_error: Error in the grain size.</span>
+<span style="color: #C41A16">    &quot;&quot;&quot;</span>
+    <span style="color: #177500">#Creates a new figure</span>
+    <span style="color: #000000">plt.figure</span>(<span style="color: #000000">figsize=</span>(<span style="color: #1C01CE">12</span>, <span style="color: #1C01CE">7</span>))
+    <span style="color: #177500">#Plots the raw data</span>
+    <span style="color: #000000">plt.scatter</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">raw</span>, <span style="color: #000000">s=</span><span style="color: #1C01CE">5</span>, <span style="color: #000000">color=</span><span style="color: #C41A16">&quot;orange&quot;</span>, <span style="color: #000000">label=</span><span style="color: #C41A16">&quot;Raw Data&quot;</span>)
+    <span style="color: #177500"># Plots the background radiation</span>
+    <span style="color: #000000">plt.scatter</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">bg</span>, <span style="color: #000000">s=</span><span style="color: #1C01CE">5</span>, <span style="color: #000000">color=</span><span style="color: #C41A16">&quot;lime&quot;</span>, <span style="color: #000000">label=</span><span style="color: #C41A16">&quot;Background&quot;</span>)
+    <span style="color: #177500">#Plots the net counts data</span>
+    <span style="color: #000000">plt.scatter</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">net</span>, <span style="color: #000000">s=</span><span style="color: #1C01CE">5</span>, <span style="color: #000000">color=</span><span style="color: #C41A16">&quot;blue&quot;</span>, <span style="color: #000000">alpha=</span><span style="color: #1C01CE">0.7</span>, <span style="color: #000000">label=</span><span style="color: #C41A16">&quot;Background Removed Data&quot;</span>)
+    <span style="color: #177500"># nnotates each peak with its label, FWHM, and area</span>
+    <span style="color: #A90D91">for</span> <span style="color: #000000">x</span>, <span style="color: #000000">y</span>, <span style="color: #000000">lbl</span>, <span style="color: #000000">fwhm</span>, <span style="color: #000000">area</span>, <span style="color: #000000">width</span>, <span style="color: #000000">fwhm_err</span>, <span style="color: #000000">area_err</span>, <span style="color: #000000">curve</span> <span style="color: #000000">in</span> <span style="color: #A90D91">zip</span>(<span style="color: #000000">peak_x</span>, <span style="color: #000000">peak_y</span>, <span style="color: #000000">labels</span>, <span style="color: #000000">fwhms</span>, <span style="color: #000000">areas</span>, <span style="color: #000000">widths</span>, <span style="color: #000000">fwhm_errors</span>, <span style="color: #000000">area_errors</span>, <span style="color: #000000">gaussian_curves</span>):
+        <span style="color: #A90D91">if</span> <span style="color: #000000">lbl</span>:
+            <span style="color: #000000">plt.annotate</span>(<span style="color: #C41A16">f&quot;{</span><span style="color: #000000">lbl</span><span style="color: #C41A16">}\nFWHM: {</span><span style="color: #000000">fwhm</span><span style="color: #C41A16">:.2f}±{</span><span style="color: #000000">fwhm_err</span><span style="color: #C41A16">:.2f}\nArea: {</span><span style="color: #000000">area</span><span style="color: #C41A16">:.2f}±{</span><span style="color: #000000">area_err</span><span style="color: #C41A16">:.2f}&quot;</span>, (<span style="color: #000000">x</span>, <span style="color: #000000">y</span>), <span style="color: #000000">xytext=</span>(<span style="color: #1C01CE">0</span>, <span style="color: #1C01CE">20</span>), <span style="color: #000000">textcoords=</span><span style="color: #C41A16">&quot;offset points&quot;</span>, <span style="color: #000000">ha=</span><span style="color: #C41A16">&quot;center&quot;</span>, <span style="color: #000000">arrowprops=</span><span style="color: #A90D91">dict</span>(<span style="color: #000000">arrowstyle=</span><span style="color: #C41A16">&quot;-&quot;</span>, <span style="color: #000000">color=</span><span style="color: #C41A16">&quot;gray&quot;</span>))
+        <span style="color: #177500"># Plots the Gaussian curve for each peak</span>
+        <span style="color: #000000">plt.plot</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">curve</span>, <span style="color: #000000">color=</span><span style="color: #C41A16">&quot;red&quot;</span>, <span style="color: #000000">alpha=</span><span style="color: #1C01CE">0.5</span>)
+    <span style="color: #177500"># Sets the title and labels</span>
+    <span style="color: #000000">plt.title</span>(<span style="color: #C41A16">&quot;py23sr2&quot;</span>)
+    <span style="color: #000000">plt.xlabel</span>(<span style="color: #C41A16">&quot;Diffraction angle 2θ (°)&quot;</span>)
+    <span style="color: #000000">plt.ylabel</span>(<span style="color: #C41A16">&quot;Counts&quot;</span>)
+    <span style="color: #177500">#Sets the y-axis to a log scale</span>
+    <span style="color: #000000">plt.yscale</span>(<span style="color: #C41A16">&quot;log&quot;</span>)
+    <span style="color: #177500"># Sets the y-axis limits</span>
+    <span style="color: #000000">plt.ylim</span>(<span style="color: #000000">bottom=</span><span style="color: #1C01CE">1e0</span>) <span style="color: #177500"># Set the lower limit of the y-axis to 0.1</span>
+    <span style="color: #000000">plt.ylim</span>(<span style="color: #000000">top=</span><span style="color: #1C01CE">1e3</span>)
+    <span style="color: #177500"># Sets the x-axis limits</span>
+    <span style="color: #000000">plt.xlim</span>(<span style="color: #000000">left=</span><span style="color: #1C01CE">0</span>)
+    <span style="color: #177500">#Adds a legend</span>
+    <span style="color: #000000">plt.legend</span>()
+    <span style="color: #177500">#Adds a legend for the composition and grain size with 2dp for size</span>
+    <span style="color: #000000">plt.text</span>(<span style="color: #1C01CE">0.02</span>, <span style="color: #1C01CE">0.98</span>, <span style="color: #C41A16">f&quot;Lattice parameter composition: {</span><span style="color: #000000">composition</span><span style="color: #C41A16">:.2f}±{</span><span style="color: #000000">composition_error</span><span style="color: #C41A16">:.2f}\nGrain size: {</span><span style="color: #000000">grain_size</span><span style="color: #C41A16">:.2f}±{</span><span style="color: #000000">grain_size_error</span><span style="color: #C41A16">:.2f} nm&quot;</span>, <span style="color: #000000">transform=plt.gca</span>()<span style="color: #000000">.transAxes</span>, <span style="color: #000000">ha=</span><span style="color: #C41A16">&quot;left&quot;</span>, <span style="color: #000000">va=</span><span style="color: #C41A16">&quot;top&quot;</span>, <span style="color: #000000">bbox=</span><span style="color: #A90D91">dict</span>(<span style="color: #000000">facecolor=</span><span style="color: #C41A16">&#39;white&#39;</span>, <span style="color: #000000">alpha=</span><span style="color: #1C01CE">0.8</span>))
+    <span style="color: #177500"># Adds a grid</span>
+    <span style="color: #000000">plt.grid</span>(<span style="color: #000000">alpha=</span><span style="color: #1C01CE">0.3</span>)
+    <span style="color: #177500"># Shrinks the layout to reduce overlap fo some of the labels</span>
+    <span style="color: #000000">plt.tight_layout</span>()
+
+<span style="color: #177500"># Main processing pipeline for data analysis</span>
+<span style="color: #A90D91">def</span> <span style="color: #000000">ProcessData</span>(<span style="color: #000000">filename</span>):
+    <span style="color: #C41A16">&quot;&quot;&quot;</span>
+<span style="color: #C41A16">    Main processing section for analysis.</span>
+
+<span style="color: #C41A16">    Args:</span>
+<span style="color: #C41A16">    filename: Path to the XRD data file.</span>
+
+<span style="color: #C41A16">    Returns:</span>
+<span style="color: #C41A16">    Analysis results in a dictionary.</span>
+<span style="color: #C41A16">    &quot;&quot;&quot;</span>
+    <span style="color: #177500"># Creates the results dictionary</span>
+    <span style="color: #000000">results</span> <span style="color: #000000">=</span> {
+        <span style="color: #C41A16">&quot;Peaks&quot;</span>: [],
+        <span style="color: #C41A16">&quot;Composition&quot;</span>: <span style="color: #A90D91">None</span>,
+        <span style="color: #C41A16">&quot;Composition_error&quot;</span>: <span style="color: #A90D91">None</span>,
+        <span style="color: #C41A16">&quot;Grain size&quot;</span>: <span style="color: #A90D91">None</span>,
+        <span style="color: #C41A16">&quot;Grain size_error&quot;</span>: <span style="color: #A90D91">None</span>
+    }
+    <span style="color: #A90D91">try</span>:
+        <span style="color: #177500"># Loads the diffraction data from the file from before</span>
+        <span style="color: #000000">wavelength</span>, <span style="color: #000000">angles</span>, <span style="color: #000000">counts</span> <span style="color: #000000">=</span> <span style="color: #000000">load_xrd_data</span>(<span style="color: #000000">filename</span>)
+        <span style="color: #177500"># Calculates the angle step</span>
+        <span style="color: #000000">angle_step</span> <span style="color: #000000">=</span> <span style="color: #000000">angles</span>[<span style="color: #1C01CE">1</span>] <span style="color: #000000">-</span> <span style="color: #000000">angles</span>[<span style="color: #1C01CE">0</span>]
+
+        <span style="color: #177500"># Detects rough peaks in the data</span>
+        <span style="color: #000000">rough_peaks</span> <span style="color: #000000">=</span> <span style="color: #000000">detect_peaks</span>(<span style="color: #000000">counts</span>, <span style="color: #000000">height=</span><span style="color: #1C01CE">150</span>, <span style="color: #000000">prominence=</span><span style="color: #1C01CE">20</span>, <span style="color: #000000">width=</span><span style="color: #1C01CE">3</span>)
+        <span style="color: #177500"># Creates a mask excluding regions around the rough peaks</span>
+        <span style="color: #000000">mask</span> <span style="color: #000000">=</span> <span style="color: #000000">create_peak_mask</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">rough_peaks</span>, <span style="color: #000000">window=</span><span style="color: #1C01CE">3.0</span>)
+        <span style="color: #177500"># Fits the background model to the non-peak regions</span>
+        <span style="color: #000000">bg_params</span>, <span style="color: #000000">bg_cov</span>, <span style="color: #000000">background</span> <span style="color: #000000">=</span> <span style="color: #000000">fit_background</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">counts</span>, <span style="color: #000000">mask</span>)
+        <span style="color: #177500"># Subtracts the background from the counts data</span>
+        <span style="color: #000000">net_counts</span> <span style="color: #000000">=</span> <span style="color: #000000">counts</span> <span style="color: #000000">-</span> <span style="color: #000000">background</span>
+
+        <span style="color: #177500"># Performs peak analysis on the background-subtracted data</span>
+        <span style="color: #000000">final_peaks</span>, <span style="color: #000000">fwhms</span>, <span style="color: #000000">areas</span>, <span style="color: #000000">widths</span> <span style="color: #000000">=</span> <span style="color: #000000">analyze_peaks</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">net_counts</span>, <span style="color: #000000">height=</span><span style="color: #1C01CE">20</span>, <span style="color: #000000">prominence=</span><span style="color: #1C01CE">10</span>, <span style="color: #000000">width=</span><span style="color: #1C01CE">2</span>)
+
+        <span style="color: #177500"># Sorting the peaks by their angles</span>
+        <span style="color: #000000">sort_idx</span> <span style="color: #000000">=</span> <span style="color: #000000">np.argsort</span>(<span style="color: #000000">angles</span>[<span style="color: #000000">final_peaks</span>])
+        <span style="color: #000000">sorted_peaks</span> <span style="color: #000000">=</span> <span style="color: #000000">final_peaks</span>[<span style="color: #000000">sort_idx</span>]
+        <span style="color: #000000">sorted_fwhm</span> <span style="color: #000000">=</span> <span style="color: #000000">np.array</span>(<span style="color: #000000">fwhms</span>)[<span style="color: #000000">sort_idx</span>]
+        <span style="color: #000000">sorted_areas</span> <span style="color: #000000">=</span> <span style="color: #000000">np.array</span>(<span style="color: #000000">areas</span>)[<span style="color: #000000">sort_idx</span>]
+        <span style="color: #000000">sorted_widths</span> <span style="color: #000000">=</span> <span style="color: #000000">np.array</span>(<span style="color: #000000">widths</span>)[<span style="color: #000000">sort_idx</span>]
+
+        <span style="color: #177500"># Defining the hkl values for the peaks</span>
+        <span style="color: #000000">hkl</span> <span style="color: #000000">=</span> [(<span style="color: #1C01CE">1</span>,<span style="color: #1C01CE">1</span>,<span style="color: #1C01CE">1</span>), (<span style="color: #1C01CE">2</span>,<span style="color: #1C01CE">0</span>,<span style="color: #1C01CE">0</span>), (<span style="color: #1C01CE">2</span>,<span style="color: #1C01CE">2</span>,<span style="color: #1C01CE">0</span>), (<span style="color: #1C01CE">3</span>,<span style="color: #1C01CE">1</span>,<span style="color: #1C01CE">1</span>), (<span style="color: #1C01CE">2</span>,<span style="color: #1C01CE">2</span>,<span style="color: #1C01CE">2</span>), (<span style="color: #1C01CE">4</span>,<span style="color: #1C01CE">0</span>,<span style="color: #1C01CE">0</span>)]
+        <span style="color: #177500"># Creates labels for the peaks</span>
+        <span style="color: #000000">labels</span> <span style="color: #000000">=</span> [<span style="color: #C41A16">f&quot;({</span><span style="color: #000000">h</span><span style="color: #C41A16">}{</span><span style="color: #000000">k</span><span style="color: #C41A16">}{</span><span style="color: #000000">l</span><span style="color: #C41A16">})&quot;</span> <span style="color: #A90D91">if</span> <span style="color: #000000">i&lt;</span><span style="color: #A90D91">len</span>(<span style="color: #000000">hkl</span>) <span style="color: #A90D91">else</span> <span style="color: #C41A16">&quot;&quot;</span> <span style="color: #A90D91">for</span> <span style="color: #000000">i</span>, (<span style="color: #000000">h</span>,<span style="color: #000000">k</span>,<span style="color: #000000">l</span>) <span style="color: #000000">in</span> <span style="color: #A90D91">enumerate</span>(<span style="color: #000000">hkl</span>[:<span style="color: #A90D91">len</span>(<span style="color: #000000">sorted_peaks</span>)])]
+
+        <span style="color: #177500">#Defines the lattice constants for Cu and Au (From document)</span>
+        <span style="color: #000000">a_Cu</span> <span style="color: #000000">=</span> <span style="color: #1C01CE">361.49e-12</span>
+        <span style="color: #000000">a_Au</span> <span style="color: #000000">=</span> <span style="color: #1C01CE">407.8e-12</span>
+
+        <span style="color: #177500">#Initializes lists to store the results</span>
+        <span style="color: #000000">a_values</span> <span style="color: #000000">=</span> []
+        <span style="color: #000000">a_errors</span> <span style="color: #000000">=</span> []
+        <span style="color: #000000">sizes</span> <span style="color: #000000">=</span> []
+        <span style="color: #000000">size_errors</span> <span style="color: #000000">=</span> []
+        <span style="color: #000000">compositions</span> <span style="color: #000000">=</span> []
+        <span style="color: #000000">comp_errors</span> <span style="color: #000000">=</span> []
+        <span style="color: #177500"># Calculates the standard deviation of the background</span>
+        <span style="color: #000000">bg_std</span> <span style="color: #000000">=</span> <span style="color: #000000">np.std</span>(<span style="color: #000000">net_counts</span>[<span style="color: #000000">mask</span>])
+
+        <span style="color: #177500"># Works out the errors in the FWHMs and areas</span>
+        <span style="color: #000000">fwhm_errors</span> <span style="color: #000000">=</span> [<span style="color: #000000">angle_step</span>]<span style="color: #000000">*</span><span style="color: #A90D91">len</span>(<span style="color: #000000">sorted_fwhm</span>)  <span style="color: #177500"># assuming error in FWHM is the same as the angle step</span>
+        <span style="color: #000000">area_errors</span> <span style="color: #000000">=</span> [<span style="color: #000000">bg_std</span> <span style="color: #000000">*</span> <span style="color: #000000">np.sqrt</span>(<span style="color: #000000">width</span>) <span style="color: #000000">*</span> <span style="color: #000000">angle_step</span> <span style="color: #A90D91">for</span> <span style="color: #000000">width</span> <span style="color: #000000">in</span> <span style="color: #000000">sorted_widths</span>]
+
+        <span style="color: #177500"># Initializes a list to store the Gaussian curves for each peak</span>
+        <span style="color: #000000">gaussian_curves</span> <span style="color: #000000">=</span> []
+        <span style="color: #177500"># Looping over all peaks</span>
+        <span style="color: #A90D91">for</span> <span style="color: #000000">idx</span>, (<span style="color: #000000">pk</span>, <span style="color: #000000">fwhm</span>, <span style="color: #000000">area</span>, <span style="color: #000000">width</span>) <span style="color: #000000">in</span> <span style="color: #A90D91">enumerate</span>(<span style="color: #A90D91">zip</span>(<span style="color: #000000">sorted_peaks</span>, <span style="color: #000000">sorted_fwhm</span>, <span style="color: #000000">sorted_areas</span>, <span style="color: #000000">sorted_widths</span>)):
+            <span style="color: #177500"># Creates a dictionary to store the peak data</span>
+            <span style="color: #000000">peak_data</span> <span style="color: #000000">=</span> {
+                <span style="color: #C41A16">&quot;2theta&quot;</span>: <span style="color: #A90D91">float</span>(<span style="color: #000000">angles</span>[<span style="color: #000000">pk</span>]),
+                <span style="color: #C41A16">&quot;2theta_error&quot;</span>: <span style="color: #000000">angle_step/</span><span style="color: #1C01CE">2</span>,
+                <span style="color: #C41A16">&quot;d&quot;</span>: <span style="color: #A90D91">None</span>,
+                <span style="color: #C41A16">&quot;d_error&quot;</span>: <span style="color: #A90D91">None</span>,
+                <span style="color: #C41A16">&quot;FWHM&quot;</span>: <span style="color: #A90D91">float</span>(<span style="color: #000000">fwhm</span>),
+                <span style="color: #C41A16">&quot;FWHM_error&quot;</span>: <span style="color: #000000">angle_step</span>,
+                <span style="color: #C41A16">&quot;Area&quot;</span>: <span style="color: #A90D91">float</span>(<span style="color: #000000">area</span>),
+                <span style="color: #C41A16">&quot;Area_error&quot;</span>: <span style="color: #000000">bg_std</span> <span style="color: #000000">*</span> <span style="color: #000000">np.sqrt</span>(<span style="color: #000000">width</span>) <span style="color: #000000">*</span> <span style="color: #000000">angle_step</span>
+            }
+
+            <span style="color: #177500">#Calculates the d-spacing for the peak</span>
+            <span style="color: #000000">theta</span> <span style="color: #000000">=</span> <span style="color: #000000">np.deg2rad</span>(<span style="color: #000000">angles</span>[<span style="color: #000000">pk</span>]<span style="color: #000000">/</span><span style="color: #1C01CE">2</span>)
+            <span style="color: #000000">d</span> <span style="color: #000000">=</span> <span style="color: #000000">wavelength/</span>(<span style="color: #1C01CE">2</span><span style="color: #000000">*np.sin</span>(<span style="color: #000000">theta</span>))
+            <span style="color: #000000">dd</span> <span style="color: #000000">=</span> (<span style="color: #000000">wavelength</span> <span style="color: #000000">*</span> <span style="color: #000000">np.cos</span>(<span style="color: #000000">theta</span>)<span style="color: #000000">/</span>(<span style="color: #1C01CE">2</span><span style="color: #000000">*np.sin</span>(<span style="color: #000000">theta</span>)<span style="color: #000000">**</span><span style="color: #1C01CE">2</span>)) <span style="color: #000000">*</span> <span style="color: #000000">np.deg2rad</span>(<span style="color: #000000">angle_step/</span><span style="color: #1C01CE">2</span>)
+
+            <span style="color: #177500">#Stores the d-spacing and its error in the peak data dictionary</span>
+            <span style="color: #000000">peak_data</span>[<span style="color: #C41A16">&quot;d&quot;</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">d</span> <span style="color: #000000">*</span> <span style="color: #1C01CE">1e9</span>)
+            <span style="color: #000000">peak_data</span>[<span style="color: #C41A16">&quot;d_error&quot;</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">dd</span> <span style="color: #000000">*</span> <span style="color: #1C01CE">1e9</span>)
+
+            <span style="color: #177500"># Calculates the grain size for the peak</span>
+            <span style="color: #000000">beta</span> <span style="color: #000000">=</span> <span style="color: #000000">np.deg2rad</span>(<span style="color: #000000">fwhm</span>)
+            <span style="color: #000000">size</span> <span style="color: #000000">=</span> <span style="color: #000000">wavelength/</span>(<span style="color: #000000">beta*np.cos</span>(<span style="color: #000000">theta</span>))
+            <span style="color: #177500"># Calculates the error in the grain size using differential uncertainty propagation</span>
+            <span style="color: #000000">size_error</span> <span style="color: #000000">=</span> <span style="color: #000000">size</span> <span style="color: #000000">*</span> <span style="color: #000000">np.sqrt</span>((<span style="color: #000000">np.deg2rad</span>(<span style="color: #000000">angle_step</span>)<span style="color: #000000">/beta</span>)<span style="color: #000000">**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">+</span> (<span style="color: #000000">np.deg2rad</span>(<span style="color: #000000">angle_step/</span><span style="color: #1C01CE">2</span>)<span style="color: #000000">/np.cos</span>(<span style="color: #000000">theta</span>))<span style="color: #000000">**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">+</span> (<span style="color: #1C01CE">1e-13</span><span style="color: #000000">/wavelength</span>)<span style="color: #000000">**</span><span style="color: #1C01CE">2</span>)
+
+            <span style="color: #177500">#Checks if the peak has a corresponding hkl value</span>
+            <span style="color: #A90D91">if</span> <span style="color: #000000">idx</span> <span style="color: #000000">&lt;</span> <span style="color: #A90D91">len</span>(<span style="color: #000000">hkl</span>):
+                <span style="color: #000000">h</span>, <span style="color: #000000">k</span>, <span style="color: #000000">l</span> <span style="color: #000000">=</span> <span style="color: #000000">hkl</span>[<span style="color: #000000">idx</span>]
+                <span style="color: #177500"># Calculates the lattice constant for the peak</span>
+                <span style="color: #000000">a</span> <span style="color: #000000">=</span> <span style="color: #000000">d</span> <span style="color: #000000">*</span> <span style="color: #000000">np.sqrt</span>(<span style="color: #000000">h**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">+</span> <span style="color: #000000">k**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">+</span> <span style="color: #000000">l**</span><span style="color: #1C01CE">2</span>)
+                <span style="color: #000000">da</span> <span style="color: #000000">=</span> <span style="color: #000000">np.sqrt</span>(<span style="color: #000000">h**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">+</span> <span style="color: #000000">k**</span><span style="color: #1C01CE">2</span> <span style="color: #000000">+</span> <span style="color: #000000">l**</span><span style="color: #1C01CE">2</span>) <span style="color: #000000">*</span> <span style="color: #000000">dd</span>
+                <span style="color: #177500"># Calculates the composition for the peak</span>
+                <span style="color: #000000">x</span> <span style="color: #000000">=</span> (<span style="color: #000000">a</span> <span style="color: #000000">-</span> <span style="color: #000000">a_Cu</span>)<span style="color: #000000">/</span>(<span style="color: #000000">a_Au</span> <span style="color: #000000">-</span> <span style="color: #000000">a_Cu</span>)
+                <span style="color: #000000">dx</span> <span style="color: #000000">=</span> <span style="color: #000000">da/</span>(<span style="color: #000000">a_Au</span> <span style="color: #000000">-</span> <span style="color: #000000">a_Cu</span>)
+
+                <span style="color: #177500">#Stores the lattice constant, its error, and the composition in the lists</span>
+                <span style="color: #000000">a_values.append</span>(<span style="color: #000000">a</span>)
+                <span style="color: #000000">a_errors.append</span>(<span style="color: #000000">da</span>)
+                <span style="color: #000000">compositions.append</span>(<span style="color: #000000">x</span>)
+                <span style="color: #000000">comp_errors.append</span>(<span style="color: #000000">dx</span>)
+
+            <span style="color: #177500"># Stores the grain size and its error in the lists</span>
+            <span style="color: #000000">sizes.append</span>(<span style="color: #000000">size</span>)
+            <span style="color: #000000">size_errors.append</span>(<span style="color: #000000">size_error</span>)
+            <span style="color: #177500"># Stores the peak data in the results dictionary</span>
+            <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Peaks&quot;</span>]<span style="color: #000000">.append</span>(<span style="color: #000000">peak_data</span>)
+
+            <span style="color: #177500"># Calculates the Gaussian curve for the peak</span>
+            <span style="color: #000000">p0</span> <span style="color: #000000">=</span> [<span style="color: #000000">net_counts</span>[<span style="color: #000000">pk</span>], <span style="color: #000000">angles</span>[<span style="color: #000000">pk</span>], <span style="color: #000000">fwhm/</span><span style="color: #1C01CE">2.355</span>]
+            <span style="color: #000000">popt</span>, <span style="color: #000000">pcov</span> <span style="color: #000000">=</span> <span style="color: #000000">curve_fit</span>(<span style="color: #000000">gaussian</span>, <span style="color: #000000">angles</span>, <span style="color: #000000">net_counts</span>, <span style="color: #000000">p0=p0</span>)
+            <span style="color: #000000">curve</span> <span style="color: #000000">=</span> <span style="color: #000000">gaussian</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">*popt</span>)
+            <span style="color: #177500"># Stores the Gaussian curve in the list</span>
+            <span style="color: #000000">gaussian_curves.append</span>(<span style="color: #000000">curve</span>)
+
+        <span style="color: #177500"># Checks if any compositions were calculated</span>
+        <span style="color: #A90D91">if</span> <span style="color: #000000">compositions</span>:
+            <span style="color: #177500"># Calculates the average composition and its error</span>
+            <span style="color: #000000">x_avg</span> <span style="color: #000000">=</span> <span style="color: #000000">np.mean</span>(<span style="color: #000000">compositions</span>)
+            <span style="color: #000000">x_err</span> <span style="color: #000000">=</span> <span style="color: #000000">np.sqrt</span>(<span style="color: #A90D91">sum</span>(<span style="color: #000000">e**</span><span style="color: #1C01CE">2</span> <span style="color: #A90D91">for</span> <span style="color: #000000">e</span> <span style="color: #000000">in</span> <span style="color: #000000">comp_errors</span>))<span style="color: #000000">/</span><span style="color: #A90D91">len</span>(<span style="color: #000000">comp_errors</span>)
+            <span style="color: #177500"># Checks if the average composition is within the valid range</span>
+            <span style="color: #A90D91">if</span> <span style="color: #1C01CE">0</span> <span style="color: #000000">&lt;=</span> <span style="color: #000000">x_avg</span> <span style="color: #000000">&lt;=</span> <span style="color: #1C01CE">1</span>:
+                <span style="color: #177500"># Stores the average composition and its error in the results dictionary</span>
+                <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Composition&quot;</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">x_avg</span>)
+                <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Composition_error&quot;</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">x_err</span>)
+            <span style="color: #A90D91">else</span>:
+                <span style="color: #A90D91">print</span>(<span style="color: #C41A16">&quot;Warning: Composition is out of range [0, 1].&quot;</span>)
+        <span style="color: #A90D91">else</span>:
+            <span style="color: #A90D91">print</span>(<span style="color: #C41A16">&quot;Warning: No composition data available.&quot;</span>)
+
+        <span style="color: #177500">#checks if any grain sizes were calculated</span>
+        <span style="color: #A90D91">if</span> <span style="color: #000000">sizes</span>:
+            <span style="color: #177500"># Calculates the average grain size and its error</span>
+            <span style="color: #000000">size_avg</span> <span style="color: #000000">=</span> <span style="color: #000000">np.mean</span>(<span style="color: #000000">sizes</span>)
+            <span style="color: #000000">size_err</span> <span style="color: #000000">=</span> <span style="color: #000000">np.sqrt</span>(<span style="color: #A90D91">sum</span>(<span style="color: #000000">e**</span><span style="color: #1C01CE">2</span> <span style="color: #A90D91">for</span> <span style="color: #000000">e</span> <span style="color: #000000">in</span> <span style="color: #000000">size_errors</span>))<span style="color: #000000">/</span><span style="color: #A90D91">len</span>(<span style="color: #000000">size_errors</span>)
+            <span style="color: #177500"># Stores the average grain size and its error in the results dictionary</span>
+            <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Grain size&quot;</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">size_avg</span> <span style="color: #000000">*</span> <span style="color: #1C01CE">1e9</span>)
+            <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Grain size_error&quot;</span>] <span style="color: #000000">=</span> <span style="color: #A90D91">float</span>(<span style="color: #000000">size_err</span> <span style="color: #000000">*</span> <span style="color: #1C01CE">1e9</span>)
+        <span style="color: #A90D91">else</span>:
+            <span style="color: #A90D91">print</span>(<span style="color: #C41A16">&quot;Warning: No grain size data available.&quot;</span>)
+
+        <span style="color: #177500"># Plots the results</span>
+        <span style="color: #000000">plot_results</span>(<span style="color: #000000">angles</span>, <span style="color: #000000">counts</span>, <span style="color: #000000">background</span>, <span style="color: #000000">net_counts</span>, <span style="color: #000000">angles</span>[<span style="color: #000000">sorted_peaks</span>], <span style="color: #000000">net_counts</span>[<span style="color: #000000">sorted_peaks</span>], <span style="color: #000000">labels</span>, <span style="color: #000000">sorted_fwhm</span>, <span style="color: #000000">sorted_areas</span>, <span style="color: #000000">sorted_widths</span>, <span style="color: #000000">fwhm_errors</span>, <span style="color: #000000">area_errors</span>, <span style="color: #000000">gaussian_curves</span>, <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Composition&quot;</span>], <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Composition_error&quot;</span>], <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Grain size&quot;</span>], <span style="color: #000000">results</span>[<span style="color: #C41A16">&quot;Grain size_error&quot;</span>])
+
+    <span style="color: #A90D91">except</span> <span style="color: #000000">Exception</span> <span style="color: #A90D91">as</span> <span style="color: #000000">e</span>:
+        <span style="color: #177500"># Prints any errors that occur during processing</span>
+        <span style="color: #A90D91">print</span>(<span style="color: #C41A16">f&quot;Error processing data: {</span><span style="color: #A90D91">str</span>(<span style="color: #000000">e</span>)<span style="color: #C41A16">}&quot;</span>)
+    <span style="color: #177500"># Returns the results dictionary</span>
+    <span style="color: #A90D91">return</span> <span style="color: #000000">results</span>
+
+<span style="color: #A90D91">if</span> <span style="color: #000000">__name__</span> <span style="color: #000000">==</span> <span style="color: #C41A16">&quot;__main__&quot;</span>:
+    <span style="color: #177500"># specifies the path to the XRD data file</span>
+    <span style="color: #000000">data_file</span> <span style="color: #000000">=</span> <span style="color: #C41A16">r&quot;C:\Users\remed\Downloads\assessment_data_py23sr2 (1).dat&quot;</span>
+    <span style="color: #177500"># Processes the data</span>
+    <span style="color: #000000">output</span> <span style="color: #000000">=</span> <span style="color: #000000">ProcessData</span>(<span style="color: #000000">data_file</span>)
+    <span style="color: #177500"># Prints out the analysis results</span>
+    <span style="color: #A90D91">print</span>(<span style="color: #C41A16">&quot;Analysis Results:&quot;</span>)
+    <span style="color: #A90D91">print</span>(<span style="color: #000000">output</span>)
+</pre></div></td></tr></table></div>
+
